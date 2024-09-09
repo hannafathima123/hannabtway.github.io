@@ -1,0 +1,566 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter 18pt";
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Inter 18pt";
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("fonts/Inter18pt-Regular.woff2") format("woff2"),
+    url("fonts/Inter18pt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("fonts/Inter18pt-Medium.woff2") format("woff2"),
+    url("fonts/Inter18pt-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("fonts/Inter18pt-Bold.woff2") format("woff2"),
+    url("fonts/Inter18pt-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("fonts/Inter18pt-Black.woff2") format("woff2"),
+    url("fonts/Inter18pt-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 12px;
+}
+section.wrapper {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+section.head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+section.head div.left {
+}
+section.head div.left h1 {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+section.head div.right {
+  margin-top: 12px;
+}
+section.head div.right ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+section.head div.right ul li a.button {
+  border: 1px solid #000;
+  padding: 8px 6px;
+  font-size: 15px;
+  color: #334155;
+}
+section.head div.right ul li a.button_fill {
+  padding: 8px 7px;
+  background: #334155;
+  color: #fff;
+  border: 1px solid #000;
+  font-size: 15px;
+}
+#spotlight {
+  margin-top: 50px;
+}
+#spotlight div.main {
+  display: flex;
+  justify-content: space-between;
+}
+#spotlight div.main div.left {
+  margin-top: 140px;
+}
+#spotlight div.main div.left h1 {
+  font-size: 45px;
+}
+#spotlight div.main div.left p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #394557;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+#spotlight div.main div.left a.button {
+  padding: 15px 30px;
+  background: #3b82f6;
+  color: #fff;
+  border-radius: 10px;
+}
+#spotlight div.main div.right img {
+  margin-right: 40px;
+  width: 600px;
+}
+#span {
+  background: #f8fafc;
+}
+#span div.item {
+  margin-top: 120px;
+}
+#span div.item ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+#span div.item ul li {
+  border-right: 4px solid #e2e8f0;
+  padding-right: 145px;
+}
+#span div.item ul li:last-child {
+  border: none;
+  padding: 0;
+}
+#span div.item ul li h4 {
+  text-align: center;
+  font-size: 30px;
+}
+#span div.item ul li p {
+  font-size: 14px;
+}
+#categories div.top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+#categories div.top div.left h2 {
+  margin-bottom: 50px;
+}
+#categories div.top div.right a {
+  color: #3b82f6;
+  margin-right: 35px;
+}
+#categories div.bottom {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+#categories div.bottom div.one {
+  padding: 30px 140px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+  margin-top: -15px;
+}
+#categories div.bottom div.one div.image {
+  background: #e0f2fe;
+  padding: 32px 34px;
+  border-radius: 55px;
+}
+#categories div.bottom div.one h4 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+#categories div.bottom div.one h4 a {
+  color: #000;
+}
+#categories div.bottom div.one p {
+  margin-top: 15px;
+  color: #394557;
+}
+#categories div.bottom div.two {
+  padding: 30px 140px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -15px;
+}
+#categories div.bottom div.two div.image {
+  background: #e0f2fe;
+  padding: 32px 10px;
+  border-radius: 55px;
+  width: 83px;
+}
+#categories div.bottom div.two h4 {
+  margin-top: 15px;
+}
+#categories div.bottom div.two a h4 {
+  color: #000;
+  font-size: 20px;
+}
+#categories div.bottom div.two p {
+  margin-top: 15px;
+  color: #394557;
+}
+#categories div.bottom div.three {
+  padding: 30px 140px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+  margin-top: -15px;
+}
+#categories div.bottom div.three div.image {
+  background: #e0f2fe;
+  padding: 32px 32px;
+  border-radius: 55px;
+}
+#categories div.bottom div.three h4 {
+  margin-top: 15px;
+}
+#categories div.bottom div.three h4 a {
+  color: #000;
+  font-size: 20px;
+}
+#categories div.bottom div.three p {
+  margin-top: 15px;
+  color: #394557;
+}
+#categories div.bottom div.four {
+  padding: 30px 140px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+  margin-top: -15px;
+}
+#categories div.bottom div.four div.image {
+  background: #e0f2fe;
+  padding: 33px 35px;
+  border-radius: 55px;
+}
+#categories div.bottom div.four h4 {
+  margin-top: 15px;
+}
+#categories div.bottom div.four h4 a {
+  color: #000;
+  font-size: 20px;
+}
+#categories div.bottom div.four p {
+  margin-top: 15px;
+  color: #394557;
+}
+#courses div.top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+#courses div.top div.right a {
+  color: #3b82f6;
+}
+#courses div.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+#courses div.bottom div.one {
+  padding: 30px 60px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+  margin-top: 40px;
+}
+#courses div.bottom div.one div.top div.image {
+  width: 315px;
+  margin-top: -92px;
+  margin-bottom: 15px;
+  margin-left: -42px;
+}
+#courses div.bottom div.one div.top div.image img {
+  width: 115%;
+}
+#courses div.bottom div.one div.guide {
+  margin-left: -35px;
+  line-height: 1.6;
+  margin-bottom: -20px;
+}
+#courses div.bottom div.one div.guide h3 {
+  font-size: 23px;
+}
+#courses div.bottom div.one div.guide p {
+  font-size: 18px;
+}
+#courses div.bottom div.one div.guide ul li {
+  font-size: 22px;
+}
+#courses div.bottom div.one div.guide h1 {
+  font-size: 25px;
+}
+#instructors div.assets {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+#instructors div.assets div.left h2 {
+  font-size: 30px;
+}
+#instructors div.assets div.right a {
+  color: #3b82f6;
+  margin-right: 25px;
+}
+#instructors div.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#instructors div.bottom div.one {
+  padding: 20px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+}
+#instructors div.bottom div.one div.top div.image img {
+  width: 240px;
+}
+#instructors div.bottom div.one div.ronald {
+  line-height: 3;
+  text-align: center;
+  color: #334155;
+}
+#instructors div.bottom div.one div.ronald p {
+  line-height: 0.5;
+}
+#instructors div.bottom div.one div.ronald hr.line {
+  margin-top: 30px;
+}
+#instructors div.bottom div.one div.line {
+  display: flex;
+  justify-content: space-between;
+  line-height: 4;
+  color: #333333;
+  margin-bottom: -20px;
+}
+#instructors div.bottom div.one div.line h1 {
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  gap: 10px;
+}
+#instructors div.bottom div.one div.line h1 img {
+  margin-top: -4px;
+}
+#customer {
+  background-color: #f8fafc;
+  margin-top: 80px;
+  height: 62vh;
+}
+#customer div.top {
+  display: flex;
+  justify-content: space-between;
+}
+#customer div.top div.left {
+  margin-top: 100px;
+}
+#customer div.top div.right {
+  margin-top: 125px;
+  margin-right: 35px;
+}
+#customer div.top div.right a {
+  background: #94a3b8;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+#customer div.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#customer div.bottom div.one {
+  padding: 25px 40px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+}
+#customer div.bottom div.one div.image img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+#customer div.bottom div.one p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+#customer div.bottom div.one div.jane_doe {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 25px;
+}
+#customer div.bottom div.one div.jane_doe div.jane img {
+  border-radius: 45px;
+  width: 70px;
+}
+#customer div.bottom div.one div.jane_doe div.doe {
+  line-height: 1.5;
+}
+#customer div.bottom div.one div.jane_doe div.doe h1 {
+  font-size: 21px;
+}
+#customer div.bottom div.one div.jane_doe div.doe s {
+  font-size: 17px;
+}
+#journey section.top {
+  display: flex;
+  justify-content: space-around;
+}
+#journey section.top div.left {
+  margin-top: 80px;
+  margin-left: -30px;
+}
+#journey section.top div.left img {
+  width: 125%;
+}
+#journey section.top div.right {
+  margin-top: 260px;
+  margin-right: 65px;
+}
+#journey section.top div.right h2 {
+  font-size: 25px;
+  line-height: 2;
+}
+#journey section.top div.right p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1d2939;
+}
+#journey section.top div.right button {
+  padding: 16px 45px;
+  margin-top: 16px;
+  border-radius: 8px;
+  background: #020617;
+  color: #fff;
+}
+#journey section.top div.right button.assets {
+  font-size: 15px;
+}
+#journey section.top div.right button.assets img {
+  margin-left: 15px;
+  margin-bottom: -2px;
+}
+#journey section.bottom section.life {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+#journey section.bottom section.life div.left {
+  margin-top: 195px;
+  margin-right: 65px;
+}
+#journey section.bottom section.life div.left h2 {
+  font-size: 25px;
+  line-height: 2;
+}
+#journey section.bottom section.life div.left p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1d2939;
+}
+#journey section.bottom section.life div.left button {
+  padding: 16px 45px;
+  margin-top: 16px;
+  border-radius: 8px;
+  background: #020617;
+  color: #fff;
+}
+#journey section.bottom section.life div.left button.assets {
+  font-size: 15px;
+}
+#journey section.bottom section.life div.left button.assets img {
+  margin-left: 15px;
+  margin-bottom: -2px;
+}
+#journey section.bottom section.life div.right {
+  margin-right: 170px;
+}
+#journey section.bottom section.life div.right img {
+  width: 125%;
+}
+footer {
+  background: #1e293b;
+  color: #fff;
+  height: 33vh;
+}
+footer section.wrapper {
+}
+footer section.byway {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+footer section.byway div.first {
+  margin-top: 70px;
+}
+footer section.byway div.first a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+footer section.byway div.first a img {
+}
+footer section.byway div.first p {
+  color:#CBD5E1;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+footer section.byway div.second {
+  margin-top: 70px;
+  line-height: 2;
+}
+footer section.byway div.second h4 {
+}
+footer section.byway div.second ul {
+}
+footer section.byway div.second ul li {
+}
+footer section.byway div.second ul li a {
+  color:#CBD5E1;;
+}
+footer section.byway div.third {
+  margin-top: 70px;
+  line-height: 2;
+}
+footer section.byway div.third h4 {
+}
+footer section.byway div.third ul {
+}
+footer section.byway div.third ul li {
+}
+footer section.byway div.third ul li a {
+   color:#CBD5E1;
+}
+footer section.byway div.four {
+  margin-top: 70px;
+  line-height: 2;
+}
+footer section.byway div.four h4 {
+}
+footer section.byway div.four ul {
+}
+footer section.byway div.four ul li {
+}
+footer section.byway div.four ul li a {
+    color:#CBD5E1;
+}
+footer section.byway div.four div.last {
+  display: flex;
+    gap: 15px;
+}
+footer section.byway div.four div.last a {
+}
+footer section.byway div.four div.last  a img {
+  width: 35px;
+  border-radius: 30px;
+  background: aliceblue;
+  padding: 5px 5px;
+  margin-top: 15px;
+}
