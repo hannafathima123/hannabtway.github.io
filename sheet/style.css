@@ -1,0 +1,816 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter 18pt";
+}
+body {
+  font-family: "Inter 18pt";
+  font-weight: normal;
+}
+.wrapper {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("fonts/Inter18pt-Regular.woff2") format("woff2"),
+    url("fonts/Inter18pt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("fonts/Inter18pt-Medium.woff2") format("woff2"),
+    url("fonts/Inter18pt-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("fonts/Inter18pt-Bold.woff2") format("woff2"),
+    url("fonts/Inter18pt-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("fonts/Inter18pt-Black.woff2") format("woff2"),
+    url("fonts/Inter18pt-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  border: 2px solid rgb(241, 241, 241);
+  padding-bottom: 4px;
+}
+header section.wrapper {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+header section.head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+header section.head div.left {
+  display: flex;
+  align-items: center;
+}
+header section.head div.left h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header section.head div.right ul li {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header section.head div.right a.button {
+  padding: 11px 16px;
+  background: #2c3747;
+  color: aliceblue;
+  border-radius: 21px;
+  margin-bottom: 8px;
+}
+#spotlight {
+  background: #f8fafc;
+  height: 440px;
+}
+#spotlight section.content {
+  margin-bottom: 35px;
+}
+#spotlight section.content div.left {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  padding-top: 35px;
+}
+#spotlight section.content div.left h1 {
+  font-weight: 100;
+}
+#spotlight section.content div.left h1 a {
+  color: #334155;
+}
+#spotlight section.content div.left h1 a img {
+  margin-left: 15px;
+}
+#spotlight section.content div.left h1 a s {
+  color: #2563eb;
+}
+#spotlight div.main {
+  display: flex;
+  justify-content: space-between;
+}
+#spotlight div.main div.left {
+  margin-top: 5px;
+}
+#spotlight div.main div.left h1 {
+  font-size: 46px;
+}
+#spotlight div.main div.left p {
+  font-size: 19px;
+  margin-top: 22px;
+  line-height: 1.5;
+  color: #334155;
+}
+#spotlight div.main div.left div.star ul {
+  display: flex;
+  gap: 10px;
+  font-size: 17px;
+  margin-top: 20px;
+}
+#spotlight div.main div.left div.star ul li {
+  color: #334155;
+}
+#spotlight div.main div.left div.star ul li.hi {
+  color: #f3bc3b;
+  font-size: 18px;
+}
+#spotlight div.main div.left div.star ul li img {
+  margin-right: -5px;
+}
+#spotlight div.main div.left div.image {
+  display: flex;
+  gap: 8px;
+}
+#spotlight div.main div.left div.image img {
+  width: 46px;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+#spotlight div.main div.left div.image p {
+  font-size: 16px;
+  margin-top: 33px;
+}
+#spotlight div.main div.left div.image p s {
+  color: #2563eb;
+}
+#spotlight div.main div.left div.languages {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+#spotlight div.main div.left div.english {
+  margin-left: 40px;
+  margin-top: -20px;
+  font-size: 17px;
+}
+#spotlight div.main div.left div.english a {
+  color: #334155;
+}
+#spotlight div.main div.right {
+  padding: 25px 20px;
+  margin-top: -60px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 1px 0px 0 rgba(0, 0, 0, 0.116);
+  background: #fff;
+}
+#spotlight div.main div.right div.top img {
+  margin-top: -5px;
+}
+#spotlight div.main div.right div.top ul li p {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  word-spacing: 7.5px;
+}
+#spotlight div.main div.right div.top ul li p s {
+  font-size: 20px;
+  color: #cccbcb;
+}
+#spotlight div.main div.right div.top ul li p small {
+  color: #16a34a;
+  font-weight: 500;
+}
+#spotlight div.main div.right div.top ul li.you {
+  margin-bottom: 52px;
+}
+#spotlight div.main div.right div.top ul li a.button_fill {
+  padding: 15px 130px;
+  border: 1px solid #2c3747;
+  background: #020617;
+  color: aliceblue;
+  border-radius: 10px;
+}
+#spotlight div.main div.right div.top ul li a.button {
+  padding: 15px 141px;
+  border: 1px solid #2c3747;
+  border-radius: 10px;
+  color: #000;
+}
+div.right hr.line {
+  margin-top: 45px;
+  width: 111%;
+  margin-left: -20px;
+  border: 1px solid #e2e8f0;
+}
+#spotlight div.main div.right div.bottom {
+  margin-top: 35px;
+}
+#spotlight div.main div.right div.bottom h6 {
+  font-size: 18px;
+}
+#spotlight div.main div.right div.bottom ul li {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+#spotlight div.main div.right div.bottom ul li a img {
+  width: 10px;
+  width: 35px;
+  padding: 6px 6px;
+  background: #fff;
+  border-radius: 35px;
+  border: 3px solid #ecf1f7;
+}
+#heading div.list {
+  margin-top: 40px;
+}
+#heading div.list ul {
+  display: flex;
+  gap: 70px;
+}
+#heading div.list ul li {
+  padding: 20px 50px;
+  border: 2px solid #ecf1f7;
+  border-radius: 10px;
+}
+#heading div.list ul li.first {
+  background: #ecf1f7;
+}
+#heading div.list ul li a {
+  color: #0f172a;
+  font-size: 15px;
+}
+#heading hr.line {
+  margin-top: 45px;
+  width: 65%;
+  border: 1px solid #ecf1f7;
+}
+#heading div.courses {
+  margin-top: 35px;
+}
+#heading div.courses hr.line {
+  margin-top: 25px;
+}
+#heading div.courses div.top h2 {
+  font-size: 28px;
+}
+#heading div.courses div.top p {
+  line-height: 1.7;
+  margin-top: 10px;
+  color: #334155;
+  font-size: 20px;
+}
+#heading div.courses div.bottom {
+  margin-top: 45px;
+}
+#heading div.courses div.bottom h2 {
+  font-size: 28px;
+}
+#heading div.courses div.bottom p {
+  line-height: 1.7;
+  margin-top: 10px;
+  color: #334155;
+  font-size: 20px;
+}
+#instructor {
+  margin-top: 40px;
+}
+
+#instructor div.top h3 {
+  font-size: 25px;
+}
+#instructor div.top h3 s {
+  font-size: 20px;
+  color: #2563eb;
+}
+#instructor div.top h3 small {
+  font-size: 16px;
+  color: #334155;
+  font-weight: 100;
+}
+#instructor div.middle {
+  display: flex;
+  gap: 15px;
+  margin-top: 18px;
+}
+#instructor div.middle div.left img {
+  width: 100px;
+  border-radius: 50px;
+}
+#instructor div.middle div.right ul {
+  margin-top: -5px;
+}
+#instructor div.middle div.right ul li a {
+  color: #334155;
+}
+#instructor div.middle div.right ul li a img {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#instructor div.bottom {
+  margin-top: 15px;
+}
+#instructor div.bottom p {
+  color: #334155;
+  font-size: 20px;
+}
+#instructor hr.line {
+  margin-top: 45px;
+  width: 65%;
+  border: 1px solid #ecf1f7;
+}
+#syllabus {
+  margin-top: 35px;
+}
+#syllabus div.top h2 {
+  margin-bottom: 15px;
+}
+#syllabus div.bottom {
+  display: flex;
+  justify-content: left;
+  gap: 460px;
+}
+
+#syllabus div.bottom div.main div.first {
+  padding: 25px 20px;
+  border: 1px solid #ecf1f7;
+  border-radius: 10px 10px 0px 0px;
+}
+#syllabus div.bottom div.main div.first ul li {
+  font-size: 20px;
+  font-weight: 600;
+}
+#syllabus div.bottom div.main div.first ul li img {
+  width: 18px;
+  margin-right: 15px;
+}
+#syllabus div.bottom div.main div.first ul li s {
+  margin-left: 540px;
+  font-size: 18px;
+  font-weight: 100;
+}
+#syllabus div.bottom div.main div.first ul li small {
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: 100;
+}
+#syllabus div.bottom div.main div.second {
+  padding: 25px 20px;
+  border: 1px solid #ecf1f7;
+}
+#syllabus div.bottom div.main div.second ul li {
+  font-size: 20px;
+  font-weight: 600;
+}
+#syllabus div.bottom div.main div.second ul li img {
+  width: 18px;
+  margin-right: 15px;
+}
+#syllabus div.bottom div.main div.second ul li s {
+  margin-left: 480px;
+  font-size: 18px;
+  font-weight: 100;
+}
+#syllabus div.bottom div.main div.second ul li small {
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: 100;
+}
+#syllabus div.bottom div.main div.three {
+  padding: 25px 20px;
+  border: 1px solid #ecf1f7;
+}
+#syllabus div.bottom div.main div.three ul li {
+  font-size: 20px;
+  font-weight: 600;
+}
+#syllabus div.bottom div.main div.three ul li img {
+  width: 18px;
+  margin-right: 15px;
+}
+#syllabus div.bottom div.main div.three ul li s {
+  margin-left: 511px;
+  font-size: 18px;
+  font-weight: 100;
+}
+#syllabus div.bottom div.main div.three ul li small {
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: 100;
+}
+#syllabus div.bottom div.main div.four {
+  padding: 25px 20px;
+  border: 1px solid #ecf1f7;
+  border-radius: 0px 0px 10px 10px;
+}
+#syllabus div.bottom div.main div.four ul li {
+  font-size: 20px;
+  font-weight: 600;
+}
+#syllabus div.bottom div.main div.four ul li img {
+  width: 18px;
+  margin-right: 15px;
+}
+#syllabus div.bottom div.main div.four ul li s {
+  margin-left: 568px;
+  font-size: 18px;
+  font-weight: 100;
+}
+#syllabus div.bottom div.main div.four ul li small {
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: 100;
+}
+#syllabus hr.line {
+  margin-top: 25px;
+  width: 65%;
+  border: 1px solid #ecf1f7;
+}
+#learner div.top {
+  margin-top: 35px;
+}
+#learner div.top h4 {
+  font-size: 22px;
+}
+#learner div.top p {
+  font-size: 22px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+#learner div.top p img {
+  width: 20px;
+}
+#learner div.top p small {
+  font-size: 22px;
+}
+#learner div.top p s {
+  font-size: 18px;
+  font-weight: 100;
+}
+#learner div.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+#learner div.bottom div.left ul li {
+  margin-top: 10px;
+}
+#learner div.bottom div.left ul li img {
+  width: 20px;
+}
+#learner div.bottom div.left ul li s {
+  margin-left: 10px;
+}
+#learner div.bottom div.right div.first {
+  display: flex;
+  gap: 140px;
+  padding: 15px 50px;
+  border: 2px solid #ecf1f7;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  margin-top: -30px;
+}
+#learner div.bottom div.right div.first div.left {
+  margin-left: -32px;
+}
+#learner div.bottom div.right div.first div.left div.image {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#learner div.bottom div.right div.first div.left div.image h4 {
+  font-size: 18px;
+}
+#learner div.bottom div.right div.first div.right ul li img {
+  margin-right: 5px;
+}
+#learner div.bottom div.right div.first div.right ul li s {
+  font-size: 20px;
+  font-weight: 600;
+}
+#learner div.bottom div.right div.first div.right ul li small {
+  font-size: 18px;
+  margin-left: 25px;
+  color: #334155;
+}
+#learner div.bottom div.right div.first div.right ul li p {
+  font-size: 19px;
+  color: #334155;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+#learner div.bottom div.right div.second {
+  display: flex;
+  gap: 140px;
+  padding: 15px 50px;
+  border: 2px solid #ecf1f7;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+#learner div.bottom div.right div.second div.left {
+  margin-left: -32px;
+}
+#learner div.bottom div.right div.second div.left div.image {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#learner div.bottom div.right div.second div.right ul li img {
+  margin-right: 5px;
+}
+#learner div.bottom div.right div.second div.right ul li s {
+  font-size: 20px;
+  font-weight: 600;
+}
+#learner div.bottom div.right div.second div.right ul li small {
+  font-size: 18px;
+  margin-left: 25px;
+  color: #334155;
+}
+#learner div.bottom div.right div.second div.right ul li p {
+  font-size: 19px;
+  color: #334155;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+#learner div.bottom div.right div.third {
+  display: flex;
+  gap: 140px;
+  padding: 15px 50px;
+  border: 2px solid #ecf1f7;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+#learner div.bottom div.right div.third div.left {
+  margin-left: -32px;
+}
+#learner div.bottom div.right div.third div.left div.image {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#learner div.bottom div.right div.third div.right ul li img {
+  margin-right: 5px;
+}
+#learner div.bottom div.right div.third div.right ul li s {
+  font-size: 20px;
+  font-weight: 600;
+}
+#learner div.bottom div.right div.third div.right ul li small {
+  font-size: 18px;
+  margin-left: 25px;
+  color: #334155;
+}
+#learner div.bottom div.right div.third div.right ul li p {
+  font-size: 19px;
+  color: #334155;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+#learner div.yoh {
+  text-align: center;
+  padding-right: 269px;
+  margin-top: 10px;
+}
+#learner div.yoh a.button {
+  padding: 11px 18px;
+  border: 1px solid #0F172A;
+  border-radius: 8px;
+  color: #000;
+}
+#customer {
+  padding: 70px 0;
+  background: #f8fafc;
+  margin-top: 45px;
+}
+#customer div.table {
+  justify-content: space-between;
+  margin-bottom: 40px;
+  display: flex;
+}
+#customer div.table div.left h2 {
+  font-size: 35px;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+#customer div.table div.right img {
+  background: #94a3b8;
+  height: 17px;
+  width: 58px;
+  border-radius: 9px;
+  padding: 10px 3px;
+}
+
+#customer div.tablebody {
+  display: flex;
+  justify-content: space-between;
+}
+#customer div.tablebody div.one {
+  width: 500px;
+  padding: 30px 27px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.226);
+  border-radius: 15px;
+}
+#customer div.tablebody div.one p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  word-spacing: 4px;
+  font-size: 19px;
+  font-family: "Inter 18pt", Arial, Helvetica, sans-serif;
+}
+#customer div.tablebody h1 a img {
+  width: 70px;
+  border-radius: 35px;
+}
+#customer div.tablebody a {
+  display: inline-block;
+  color: #000;
+}
+#customer div.tablebody a s {
+}
+#customer div.tablebody div.one div.re {
+  display: inline-block;
+}
+#customer div.tablebody div.one img {
+  width: 100%;
+  border-radius: 67px;
+}
+#customer div.tablebody div.one h1 {
+  display: inline;
+}
+#customer div.tablebody div.one h1 a s {
+  font-size: 17px;
+  color: #334155;
+  font-weight: 500;
+}
+
+#star {
+  padding: 70px 0;
+}
+#star div.tab {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#star div.tab div.left h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #0f172a;
+}
+#star div.tab div.right a {
+  color: #3b82f6;
+}
+#star ul {
+  display: flex;
+  justify-content: space-between;
+}
+#star ul li.card {
+  text-align: left;
+  padding: 16px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.116);
+  border-radius: 15px;
+}
+#star ul li.card a img {
+  width: 100%;
+}
+#star ul li.card h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+#star ul li.card a {
+  margin-bottom: 10px;
+  display: block;
+}
+#star ul li.card img small {
+  position: relative;
+  bottom: 3px;
+}
+#star ul li.card p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer {
+  padding: 60px;
+  background: #1e293b;
+}
+footer section.top {
+  display: flex;
+  gap: 120px;
+}
+footer section.top div.item.large {
+  width: 36%;
+}
+footer section.top div.item.large a {
+  font-size: 24px;
+  max-width: 260px;
+  color: #fff;
+}
+footer section.top div.item.large a img {
+  width: 5%;
+}
+footer section.top div.item.large h2 {
+  font-size: 17px;
+  color: #cbd5e1;
+}
+footer section.top {
+  margin-bottom: 50px;
+}
+footer section.top div.item h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f1f5f9;
+  margin-bottom: 10px;
+}
+footer section.top div.item ul {
+}
+footer section.top div.item ul li {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+footer section.top div.item ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+footer section.top div.item ul a img {
+  width: 30px;
+  gap: 30px;
+  background-color: #f1f5f9;
+  border-radius: 20px;
+}
+footer {
+  padding: 60px;
+  background: #1e293b;
+}
+footer section.top {
+  display: flex;
+  justify-content: space-be43px
+}
+footer section.top div.item.nike h2 {
+  font-size: 17px;
+  color: #cbd5e1;
+  font-weight: 100;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+footer section.top {
+  margin-bottom: 50px;
+}
+footer section.top div.item h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f1f5f9;
+  margin-bottom: 10px;
+}
+footer section.top div.item2 h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f1f5f9;
+  margin-bottom: 10px;
+}
+footer section.top div.item2 ul li {
+}
+footer section.top div.item ul li {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+footer section.top div.item2 ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+footer section.top div.item ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+footer section.top div.item ul a img {
+  width: 27px;
+  background-color: #f1f5f9;
+  padding: 5px 5px;
+  border-radius: 20px;
+  margin-right: 24px;
+}
+
